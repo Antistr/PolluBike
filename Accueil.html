@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8" />
+    <title>PolluBike</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+
+   <!-- CSS d'OpenStreetMap -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+   <link rel="stylesheet" type="text/css" href="styles/map.css"/>
+
+   <!-- OSM -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <link rel="stylesheet" type="text/js" href="index.js">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="Style_mobile.css" />
+  </head>
+
+  <body>
+    <!--en-tête-->
+  	<header>
+        <img class="logo" src="images/PolluBike_logo_mini.png" alt="PolluBike" />
+      <h1>PolluBike</h1>
+    </header>
+
+    <div class="flexbox">
+      <!--menu-->
+      <input id="menu-checkbox" type="checkbox">
+      <nav>
+        <label for="menu-checkbox" class="menu"><img src="images/Menu_mini.png" alt="Menu" /></label>
+        <a href="Accueil.html"><div>Accueil</div></a>
+        <a href="Projet.html"><div>Le projet</div></a>
+        <a href="Ats.html"><div>L'atelier Scientifique</div></a><br/>
+      </nav>
+
+      <main>
+        <!--bannière-->
+          <h2><img src="images/Accueil_mini.png" alt="Accueil" />Accueil</h2>
+
+        <!--contenu-->
+          <p>Carte de pollution à Massy :</p>
+
+          <from class="recherche">
+            <input class="glass" type="text" placeholder="Rechercher un lieu..." style="outline: currentcolor none medium;">
+            <a class="reset">X</a>
+            <div class="results"></div>
+          </from>
+
+          <div id="maCarte"></div>
+      </main>
+    </div>
+    
+    
+
+    <!--Pied de page-->
+    <footer>
+      <div class=twitter>
+        <a href="https://twitter.com/atsvilgenis">
+          <img src="images/Twitter_logo.png" alt="twitter"/>
+          <div>Twitter</div>
+        </a>
+      </div>
+
+      <div class=facebook>
+        <a href="https://fr-fr.facebook.com/pg/Atelier-Scientifique-Vilg%C3%A9nis-464225180420327/about/">
+          <img src="images/Facebook_logo.png" alt="facebook"/>
+          <div>Facebook</div>
+        </a>
+      </div>
+
+      <div class="youtube">
+        <a href="https://www.youtube.com/channel/UCX6p2OItleviN-gv_HJi5AQ">
+          <img src=images/Youtube_logo.png alt="youtube"/>
+          <div>Youtube</div>
+        </a>
+      </div>
+
+      <div class="instagram">
+        <a href="https://instagram.com/atelierscientifiquevilgenis?igshid=1kublmacpedfz">
+          <img src="images/Instagram_logo.png" alt="instagram"/>
+          <div>Instagram</div>
+        </a>
+      </div>
+    </footer>
+
+        <!-- Fichiers Javascript d'OpenStreetMap -->
+      <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+      <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+      <script src="scripts/map.js"></script>
+    
+  </body>
+</html>

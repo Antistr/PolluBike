@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'cunia';
+    src: url('Cunia/Cunia-webfont.eot');
+    src: url('Cunia/Cunia-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Cunia/Cunia-webfont.woff2') format('woff2'),
+         url('Cunia/Cunia-webfont.woff') format('woff'),
+         url('Cunia/Cunia-webfont.ttf') format('truetype'),
+         url('Cunia/Cunia-webfont.svg#boldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*header*/
+
+header
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	align-items: flex-start;
+	z-index:2;
+    background-image: radial-gradient(circle at center, rgb(170,190,255), rgb(122,138,204));
+}
+
+h1
+{
+	font-family:'cunia';
+	display: inline-block;
+}
+
+.logo
+{
+	display: inline-block;
+	position: relative;
+	right: 5px;
+	top: 10px;
+}
+
+/*bannière*/
+
+h2
+{
+	display: flex;
+	background-color: rgb(190,204,229);
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 img
+{
+	margin-right:10px;
+}
+
+/*menu*/
+
+input[type="checkbox"]
+{
+	display: none;
+}
+
+nav
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items:center;
+	text-align: center;
+	background-color: rgb(190,204,229);
+	color:rgb(61,70,102);
+	height: 200px;
+	padding-left:40px;
+	padding-right:40px;
+	margin-left:2%;
+	margin-top:20px;
+}
+
+.menu
+{
+	width: 50px;
+	height: 50px;
+	align-self: center;
+	margin-top:20px;
+}
+
+/*contenu*/
+
+#maCarte
+{ 
+	height:500px;
+	width:100%;
+	position: relative;
+	z-index: 1;
+}
+
+
+/*footer*/
+
+footer
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(122,138,204);
+	padding: 20px;
+	margin: 20px;
+}
+
+.twitter div, .facebook div, .youtube div, .instagram div
+{
+	vertical-align: 50%;
+	margin-left: 10px;
+}
+
+/*tout*/
+
+body
+{
+	font-family: Georgia, "Times new roman";
+}
+
+.flexbox
+{
+	display: flex;
+	margin-top:70px;
+}
+
+
+main
+{
+	margin-right : 10%;
+	width:100%;
+	margin-left:5%;
+	color:rgb(61,70,102);
+}
+
+img, div, a
+{
+	display: inline-block;
+}
+
+a
+{
+	text-decoration: none;
+	color:rgb(61,70,102);
+	padding:5px;
+}
+
+a:hover
+{
+	box-shadow: 2px 2px 4px black ;
+}
+
+a:visited
+{
+	color:rgb(61,70,102);
+}
+
+.recherche
+{
+	position: relative;
+	left: 25%;
+}

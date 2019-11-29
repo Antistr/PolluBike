@@ -1,0 +1,68 @@
+
+input[type="checkbox"]
+{
+	display: block;
+	position:absolute;
+	top: -5000px;
+}
+
+label
+{
+	position: absolute;
+	top:-9px;
+	left:10%;
+	z-index: 3;
+}
+
+nav div
+{
+	display: none; 
+}
+
+input[type="checkbox"]:checked + nav div
+{
+	display: inline-block;
+}
+
+input[type="checkbox"]:not(:checked) + nav
+{
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+}
+
+nav
+{
+	background-color: rgb(122,138,204);
+	position: fixed;
+	top:-10px;
+	left: -20px;
+	z-index: 2;
+	margin-top:70px;
+}
+
+nav label
+{
+	position: fixed;
+	top: -9px;
+	left:2%;
+	z-index: 3;
+}
+
+header
+{
+	z-index: 2;
+	margin : 0;
+	background-image: radial-gradient(circle at center, rgb(122,138,204), rgb(122,138,204));
+}
+
+.logo
+{
+	position: fixed;
+	z-index: 1;
+}
+
+a:hover
+{
+	box-shadow: none;
+}
