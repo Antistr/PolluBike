@@ -24,7 +24,7 @@ header
 	width:100%;
 	align-items: flex-start;
 	z-index:2;
-    background-image: radial-gradient(circle at center, rgb(170,190,255), rgb(122,138,204));
+    background-color:  rgb(141,155,216);
 }
 
 h1
@@ -46,7 +46,7 @@ h1
 h2
 {
 	display: flex;
-	background-color: rgb(190,204,229);
+	background-color: rgb(141,155,216);
 	height: 50px;
 	justify-content: center;
 	align-items: center;
@@ -71,7 +71,7 @@ nav
 	justify-content: space-around;
 	align-items:center;
 	text-align: center;
-	background-color: rgb(190,204,229);
+	background-color: rgb(141,155,216);
 	color:rgb(61,70,102);
 	height: 200px;
 	padding-left:40px;
@@ -95,7 +95,10 @@ nav
 	height:500px;
 	width:100%;
 	position: relative;
+	border: none;
 	z-index: 1;
+	border-radius: 10px;
+	margin: auto;
 }
 
 
@@ -106,7 +109,7 @@ footer
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: rgb(122,138,204);
+	background-color: rgb(141,155,216);
 	padding: 20px;
 	margin: 20px;
 }
@@ -164,5 +167,10 @@ a:visited
 .recherche
 {
 	position: relative;
-	left: 25%;
+	z-index: 2;
+	display: flex;
+	margin-bottom: 5px;
+	top: 50px;
+	left: 40%;
+
 }
